@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	// Slider
-	if(window.location.href.indexOf('index') || window.location.href.indexOf('https://elsukia.github.io/') > -1 ){
+	if(window.location.href.indexOf('index') > -1 ){
 	  
 	  $('.galeria').bxSlider({
 	    mode: 'fade',
@@ -14,7 +14,7 @@ $(document).ready(function(){
 	}
 
 	// Posts
-	if(window.location.href.indexOf('index') || window.location.href.indexOf('https://elsukia.github.io/') > -1 ){
+	if(window.location.href.indexOf('index') > -1 ){
 		var posts = [
 			{
 				title: 'Primer Post: Explicación',
@@ -106,13 +106,13 @@ $(document).ready(function(){
 
 	// Acordeon
 
-	if(window.location.href.indexOf('http://munozgamboa.com/' ) > -1 || window.location.href.indexOf('about' ) > -1 ){
+	if(window.location.href.indexOf('about' ) > -1 ){
 		$("#acordeon").accordion();
 	}
 
 
 	// Reloj
-	if(window.location.href.indexOf('http://munozgamboa.com/' ) > -1 || window.location.href.indexOf('reloj' ) > -1 ){
+	if(window.location.href.indexOf('reloj' ) > -1 ){
 
 		setInterval(function(){
 				var reloj = moment().format("hh:mm:ss");
@@ -123,7 +123,7 @@ $(document).ready(function(){
 	}
 
 	// Validación
-	if(window.location.href.indexOf('http://munozgamboa.com/' ) > -1 || window.location.href.indexOf('contact' ) > -1 ){
+	if(window.location.href.indexOf('contact' ) > -1 ){
 	
 		$("form input[name='date']").datepicker({
 			dateFormat: 'dd-mm-yy'
