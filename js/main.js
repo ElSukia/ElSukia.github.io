@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	// Slider
-	if(window.location.href.indexOf('index') > -1 ){
+	if(window.location.href.indexOf('index') || window.location.href.indexOf('https://elsukia.github.io/') > -1 ){
 	  
 	  $('.galeria').bxSlider({
 	    mode: 'fade',
@@ -14,7 +14,7 @@ $(document).ready(function(){
 	}
 
 	// Posts
-	if(window.location.href.indexOf('index') > -1 ){
+	if(window.location.href.indexOf('index') || window.location.href.indexOf('https://elsukia.github.io/') > -1 ){
 		var posts = [
 			{
 				title: 'Primer Post: Explicación',
