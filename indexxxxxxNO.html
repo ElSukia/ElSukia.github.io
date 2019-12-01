@@ -2,7 +2,8 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8" />
-		<title>Proyecto con JavaScript</title>
+		
+		<title>Gamboa Website</title>
 
 		<!-- Estilos CSS -->
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -10,13 +11,14 @@
 
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css" />
-		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css" />
-		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css" />
-		<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
 
-		<!-- Plugin validacion -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+		<!-- Slider --> 
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	
+		<!-- Moment -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
 
 		<!-- Mis Scripts -->
 		<script type="text/javascript" src="js/main.js"></script>
@@ -33,60 +35,39 @@
 			<!-- Cabecera -->
 			<header>
 				<div id="logo">
-						<h1>Sitio web de Brandon Muñoz</h1>
+					<h1>Sitio web de Brandon Muñoz</h1>
 				</div>
 
 				<div class="clearfix"></div>
 
 				<nav id="menu">
 					<ul>
-						<li><a href="index1.html">Inicio</a></li>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="reloj.html">Reloj</a></li>
 						<li><a href="about.html">Sobre mi</a></li>
 						<li><a href="contact.html">Contacto</a></li>
 						<li><a href="genealogia.html">Genealogía</a></li>
 						<li>Historia</a></li>
-						<li><a href="genetica.html">Genética</a></li>
+						<li>Genética</a></li>
 						<li>Legislación</a></li>
-						<li>Travels</a></li>
-						<li><a href="reloj.html">Reloj</a></li>
 					</ul>
 				</nav>
 			</header>
 
+			<!-- Slider -->
+			<div id="slider">
+				<div class="galeria">
+				  <div><img src="img/hojas.jpg" title="Hojas"></div>
+				  <div><img src="img/rojo.jpg" title="The long and winding road"></div>
+				  <div><img src="img/cielo.jpg" title="Happy trees"></div>
+				</div>
+			</div>
 
 			<!-- Contenido -->
 			<section id="content">
 
-				<div id="box">
-					<!-- Cargar formulario -->
-					<h2>Contacto</h2>
-					<h4>Este formulario es solo de prueba, pues aún no sé utilizar las funciones de "backend" del servidor.</h4>
-
-					<form action="" method="POST" id="form_contact">
-						<label for="name">Nombre</label>
-						<input type="text" name="name" data-validation="alphanumeric" />
-
-						<label for="surname">Apellidos</label>
-						<input type="text" name="surname" data-validation="alphanumeric" />
-
-						<label>Email</label>
-						<input type="email" name="email" data-validation="email"/>
-
-						<label for="sex">Sexo</label>
-						<select name="sex" data-validation="required">
-							<option value="men">Hombre</option>
-							<option value="woman">Mujer</option>
-						</select>
-
-						<label for="date">Fecha de nacimiendo</label>
-						<input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy"/>
-
-						<label for="years">Edad</label>
-						<input type="number" name="years" data-validation="number"/>
-
-						<input type="submit" value="Enviar" />
-					</form>
-	
+				<div id="posts">
+					<!-- Cargar posts desde json -->
 				</div>
 
 				<aside id="sidebar">
