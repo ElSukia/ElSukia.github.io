@@ -1,11 +1,7 @@
 $(document).ready(function(){
 
 	// Slider
-<<<<<<< HEAD
 		if(window.location.href.indexOf('index') > -1 ){
-=======
-	if(window.location.href.indexOf('index1') > -1 ){
->>>>>>> 2d3c80ad11604d0396d33ad571ce49059343e1d2
 	  
 	  $('.galeria').bxSlider({
 	    mode: 'fade',
@@ -18,11 +14,7 @@ $(document).ready(function(){
 	}
 
 	// Posts
-<<<<<<< HEAD
 	if(window.location.href.indexOf('index') > -1 ){
-=======
-	if(window.location.href.indexOf('index1') > -1 ){
->>>>>>> 2d3c80ad11604d0396d33ad571ce49059343e1d2
 		var posts = [
 			{
 				title: 'Primer Post: Explicación',
