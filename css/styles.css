@@ -1,3 +1,13 @@
+@font-face {
+	font-family: "yanone";
+	scr: url('fonts/yanone.ttf');
+}
+
+@font-face{
+	font-family: "finger";
+	src: url("fonts/finger.ttf");
+}
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -9,30 +19,31 @@
 }
 
 #global{
-	width: 65%;
+	width: 80%;
 	margin: 0px auto;
 	margin-top: 30px;
 	padding: 25px;
-	background: white;
+	background: url("../img/patron3.jpg");
 	box-shadow: 0px 0px 2px gray;
 }
 
 #logo{
-	font-family: Verdana, Arial;
+	display: block;
+	margin: auto;
+	width: 80%;
+	font-family: "yanone";
 	font-size: 15px;
 	letter-spacing: 4px;
 	line-height: 70px;
 	color: white;
 	text-align: center;
-	width: 600px;
 	height: 80px;
 	margin-bottom: 20px;
-	float: left;
 	text-transform: uppercase;
 }
 
 #menu{
-	font-family: Helvetica, Arial;
+	font-family: "finger";
 	background: #333;
 	width: 100%;
 	text-transform: uppercase;
@@ -122,7 +133,9 @@ h2{
 }
 
 #sidebar img{
-	width: 80%;
+	width: 50%;
+	display: block;
+	margin: auto;
 }
 
 #sidebar p{
