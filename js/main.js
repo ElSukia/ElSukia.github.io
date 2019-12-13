@@ -17,20 +17,10 @@ $(document).ready(function(){
 	if(window.location.href.indexOf('index1') > -1 ){
 		var posts = [
 			{
-				title: 'Primer Post: Explicación',
+				title: 'Bienvenidos',
 				date: 'Publicado el dia ' + 24 + " de " + "noviembre" + " del " + 2019,
-				content: '¡Hola! Este sitio web es temporal. Fue creado utilizando únicamente html,css y javascript. En el futuro espero implementar Mean Stack o incluso PHP para poder tener un backend decente y poder aportar más y mejores funcionalidades a la web. Por cierto, el botón de "leer más" que aparece debajo, es solo decorativo de momento.'
-			},
-			{
-				title: 'Prueba de titulo 2',
-				date: 'Publicado el dia ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-				content: 'Espacio para futuras publicaciones'
-			},
-			{
-				title: 'x',
-				date: 'Publicado el dia ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-				content: 'x'
-			},
+				content: '¡Hola! El diseño de este sitio web es temporal. Fue creado utilizando únicamente html,css y javascript. En el futuro espero implementar Mean Stack o incluso PHP para poder tener un backend decente y poder aportar más y mejores funcionalidades a la web. La idea es subir contenido interesante para mi y generado por mi :)' 
+			}
 		];
 
 		posts.forEach((item, index) => {
@@ -41,7 +31,7 @@ $(document).ready(function(){
 					<p>
 						${item.content}
 					</p>
-					<a href="#" class="button-more">Leer más</a>
+					
 				</article>
 			`;
 
