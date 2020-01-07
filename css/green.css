@@ -1,15 +1,16 @@
 body{
-	background: url("../img/bosque.jpg");
+	background: url("../img/nyc.jpg");
 	background-attachment: fixed;
 }
 
 #logo{
-	background: #235E3D;
+	background: url("../img/poli.jpg");
+	
 
 }
 
 #menu ul li:hover{
-	background: #235E3D;
+	background: gray;
 }
 
 .button-more{

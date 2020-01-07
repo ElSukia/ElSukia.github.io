@@ -1,25 +1,32 @@
 $(document).ready(function(){
 
+
+
 	// Slider
+	/*
 		if(window.location.href.indexOf('index1') > -1 ){
 	  
 	  $('.galeria').bxSlider({
+
 	    mode: 'fade',
 	    captions: false,
-	    slideWidth: 1200,
-	    responsive: true,
+	    slideWidth: 800,
+	    responsive: false,
 	    pager: true
 	  });
 
 	}
-
+*/
 	// Posts
-	if(window.location.href.indexOf('index1') > -1 ){
+	if(window.location.href.indexOf('index') > -1 ){
 		var posts = [
 			{
-				title: 'Bienvenidos',
+				title: 'Bienvenidos | Welcome',
 				date: 'Publicado el dia ' + 24 + " de " + "noviembre" + " del " + 2019,
-				content: '¡Hola! El diseño de este sitio web es temporal. Fue creado utilizando únicamente html,css y javascript. En el futuro espero implementar Mean Stack o incluso PHP para poder tener un backend decente y poder aportar más y mejores funcionalidades a la web. La idea es subir contenido interesante para mi y generado por mi :)' 
+				content: '¡Hola! El diseño de este sitio web es temporal. Fue creado utilizando únicamente html,css y javascript. En el futuro espero implementar Mean Stack o incluso PHP para poder tener un backend decente y aportar más y mejores funcionalidades a la web. La idea es subir contenido interesante para mi y generado por mi :)'+
+				' </br> </br> Hello! This website is for uploading interesting content. If you are an english native speaker'+
+				' and planning to travel to Costa Rica, the section of "Travels" could have some important things for you.'+
+				'</br> Also, i have some interesting things related with genetics of Costa Rican population.'+'<h3>If you want to see all the website in English press the USA flag in the left of the window</h3>' 
 			}
 		];
 
@@ -39,23 +46,51 @@ $(document).ready(function(){
 		});
 	}
 
+		if(window.location.href.indexOf('home') > -1 ){
+		var posts = [
+			{
+				title: 'Welcome',
+				date: 'Date of publishing ' + " January "+6+ " 2020",
+				content: ''+
+				' </br> </br> Hello! This website is for uploading interesting content. If you are an english native speaker'+
+				' and planning to travel to Costa Rica, the section of "Travels" could have some important things for you.'+
+				'</br> Also, i have some interesting things related with genetics of Costa Rican population.' 
+			}
+		];
 
+		posts.forEach((item, index) => {
+			var post = `
+				<article class="post">
+					<h2>${item.title}</h2>
+					<span class="date">${item.date}</span>
+					<p>
+						${item.content}
+					</p>
+					
+				</article>
+			`;
+
+			$("#posts").append(post);
+		});
+	}
+
+/*
 	// Selector de tema
 	var theme = $("#theme");
 
-	$("#to-green").click(function(){
-		theme.attr("href", "css/green.css");
+	$("#to-usa").click(function(){
+		theme.attr("href", "turisteando.html");
 	});
 	
-	$("#to-red").click(function(){
-		theme.attr("href", "css/red.css");
+	$("#to-cr").click(function(){
+		theme.attr("href", "index1.html");
 	});
 	
 	$("#to-blue").click(function(){
-		theme.attr("href", "css/blue.css");
+		theme.attr("href", "turisteando.html");
 	});
 
-	
+	*/
 	// Scroll arriba de la web
 	$('.subir').click(function(e){
 		e.preventDefault();
@@ -128,7 +163,8 @@ $(document).ready(function(){
 	}
 
 
-
 	
 
 });
+
+
